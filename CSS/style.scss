@@ -1,0 +1,134 @@
+//@import mixins and variables
+@import "mixins";
+//Delete default settings
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: burlywood;
+    display: flex;  
+    justify-content: center;
+}
+#mainpage{
+    @include size(810px, 810px);
+    background-color: coral;
+    margin-top: 50px;
+    box-shadow: 0 0 20px rgb(114, 112, 7);
+    @include flDownEvenly();
+    // display: none;
+    h3{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 110px;
+        color: #119c0d;
+        text-shadow: 2px 2px 0px black;
+    }
+    p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 90px;
+        text-transform: capitalize;
+        color: #119c0d;
+        text-shadow: 2px 2px 0px black;
+    }
+    input{
+        @include size(700px, 80px);
+        border-radius: 20px;
+        border: 2px solid #119c0d;
+        box-shadow: 0px 0px 10px rgb(148, 87, 7);
+        outline: none;
+        font-size: 28px;
+        color: #119c0d;
+        padding-left: 10px;
+    }
+    button{
+        @include size(400px, 80px);
+        cursor: pointer;
+        background-color: #119c0d;
+        box-shadow: 0px 0px 10px rgb(148, 87, 7);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+}
+// Game page style
+#gamepage{
+    @include size(810px, 1110px);
+    background-color: coral;
+    box-shadow: 0 0 20px rgb(114, 112, 7);
+    margin-top: 50px;
+    @include flDownAround();
+    display: none;
+    #gamepageTop{
+        @include size(810px, 250px);
+        background-color: coral;
+        box-shadow: 0 0 20px rgb(114, 112, 7);
+        @include flDownEvenly();
+        h3{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 90px;
+            color: #119c0d;
+            text-shadow: 2px 2px 0px black;
+        }
+        p{
+            width: 100%;
+            height:70px ;
+            line-height: 70px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 70px;
+            text-transform: capitalize;
+            color: #119c0d;
+            text-shadow: 2px 2px 0px black;
+        }
+    }
+    #container{
+        @include size(810px, 810px);
+        background-color: coral;
+        margin-top: 50px;
+        box-shadow: 0 0 20px rgb(114, 112, 7);
+        @include flexBetween();
+        flex-wrap: wrap;
+        align-content: space-between;
+        .containerDivs{
+            @include size(260px, 260px);
+            background-color: rgb(255, 199, 179);
+            @include flexCenter();
+            cursor: pointer;
+            color: rgb(121, 173, 0);
+            font-size: 230px;
+            text-shadow: 0 0 2px black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+}
+//Win
+#win{
+    @include size(1000px, 400px);
+    background-color: coral;
+    margin-top: 150px;
+    box-shadow: 0 0 20px rgb(114, 112, 7);
+    @include flDownEvenly();
+    display: none;
+    h3{
+        font-size: 60px;
+        color: rgb(121, 173, 0);
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    button{
+        @include size(400px, 80px);
+        cursor: pointer;
+        background-color: #119c0d;
+        box-shadow: 0px 0px 10px rgb(148, 87, 7);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+}

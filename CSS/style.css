@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: burlywood;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mainpage {
+  width: 810px;
+  height: 810px;
+  background-color: coral;
+  margin-top: 50px;
+  -webkit-box-shadow: 0 0 20px #727007;
+          box-shadow: 0 0 20px #727007;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#mainpage h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 110px;
+  color: #119c0d;
+  text-shadow: 2px 2px 0px black;
+}
+
+#mainpage p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 90px;
+  text-transform: capitalize;
+  color: #119c0d;
+  text-shadow: 2px 2px 0px black;
+}
+
+#mainpage input {
+  width: 700px;
+  height: 80px;
+  border-radius: 20px;
+  border: 2px solid #119c0d;
+  -webkit-box-shadow: 0px 0px 10px #945707;
+          box-shadow: 0px 0px 10px #945707;
+  outline: none;
+  font-size: 28px;
+  color: #119c0d;
+  padding-left: 10px;
+}
+
+#mainpage button {
+  width: 400px;
+  height: 80px;
+  cursor: pointer;
+  background-color: #119c0d;
+  -webkit-box-shadow: 0px 0px 10px #945707;
+          box-shadow: 0px 0px 10px #945707;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+#gamepage {
+  width: 810px;
+  height: 1110px;
+  background-color: coral;
+  -webkit-box-shadow: 0 0 20px #727007;
+          box-shadow: 0 0 20px #727007;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: none;
+}
+
+#gamepage #gamepageTop {
+  width: 810px;
+  height: 250px;
+  background-color: coral;
+  -webkit-box-shadow: 0 0 20px #727007;
+          box-shadow: 0 0 20px #727007;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#gamepage #gamepageTop h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 90px;
+  color: #119c0d;
+  text-shadow: 2px 2px 0px black;
+}
+
+#gamepage #gamepageTop p {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 70px;
+  text-transform: capitalize;
+  color: #119c0d;
+  text-shadow: 2px 2px 0px black;
+}
+
+#gamepage #container {
+  width: 810px;
+  height: 810px;
+  background-color: coral;
+  margin-top: 50px;
+  -webkit-box-shadow: 0 0 20px #727007;
+          box-shadow: 0 0 20px #727007;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+#gamepage #container .containerDivs {
+  width: 260px;
+  height: 260px;
+  background-color: #ffc7b3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  color: #79ad00;
+  font-size: 230px;
+  text-shadow: 0 0 2px black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#win {
+  width: 1000px;
+  height: 400px;
+  background-color: coral;
+  margin-top: 150px;
+  -webkit-box-shadow: 0 0 20px #727007;
+          box-shadow: 0 0 20px #727007;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: none;
+}
+
+#win h3 {
+  font-size: 60px;
+  color: #79ad00;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#win button {
+  width: 400px;
+  height: 80px;
+  cursor: pointer;
+  background-color: #119c0d;
+  -webkit-box-shadow: 0px 0px 10px #945707;
+          box-shadow: 0px 0px 10px #945707;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */
